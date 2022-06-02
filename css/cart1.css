@@ -1,0 +1,257 @@
+:root {
+  --book-button-bg-color: #812020;
+}
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.crumbs {
+  margin-top: 15px;
+  width: 80vw;
+  font-weight: bold;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.detailed {
+  display: flex;
+  width: 80vw;
+  height: 63vh;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+}
+.left {
+  width: 50%;
+  border-right: 1px solid #ececec;
+}
+.reduce,
+.add {
+  background-color: var(--book-button-bg-color);
+  border: none;
+  color: #fff;
+  height: 24px;
+  position: relative;
+}
+.reduce {
+  left: 4px;
+}
+.add {
+  right: 4px;
+}
+.counter {
+  display: flex;
+  margin-top: 25px;
+}
+.counter .num {
+  border: 1px solid #ececec;
+  border-left: none;
+  border-right: none;
+  width: 30px;
+  height: 20px;
+  text-align: center;
+}
+.book {
+  display: flex;
+  margin-top: 20px;
+}
+.bookLeft {
+  border: 1px solid #ececec;
+  width: 140px;
+}
+.bookLeft img {
+  width: 100%;
+}
+.bookRight {
+  margin-left: 20px;
+  width: 70%;
+}
+.bookRight .bookPrice {
+  margin-top: 15px;
+}
+.bookRight .trashCan {
+  margin-top: 15px;
+  position: relative;
+}
+.bookRight .trashCan img {
+  position: absolute;
+  right: 20px;
+  width: 15px;
+}
+.update {
+  position: relative;
+  margin-top: 20px;
+}
+.update button {
+  background-color: var(--book-button-bg-color);
+  border: none;
+  color: #fff;
+  width: 125px;
+  height: 25px;
+  font-size: 13px;
+  position: absolute;
+  right: 40px;
+}
+.bookName {
+  width: 100%;
+}
+.right {
+  width: 50%;
+}
+.right .box {
+  padding: 20px;
+  width: 70%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #ececec;
+}
+.subtotal,
+.shipping,
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+.shipping,
+.total,
+.checkout {
+  margin-top: 20px;
+}
+.checkout {
+  text-align: center;
+}
+.total {
+  font-weight: bold;
+}
+.checkout button {
+  background-color: var(--book-button-bg-color);
+  border: none;
+  color: #fff;
+  width: 125px;
+  height: 25px;
+}
+.phoneCrumbs,
+.quantity,
+.edit,
+.launchIcon {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .crumbs,
+  .counter,
+  .trashCan,
+  .update,
+  .next,
+  .box {
+    display: none !important;
+  }
+  .phoneCrumbs,
+  .edit,
+  .quantity,
+  .launchIcon {
+    display: block;
+  }
+  .phoneCrumbs {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  .detailed {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  .left,
+  .right {
+    width: 100%;
+    border: none;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .phoneCrumbs {
+    margin-top: 15px;
+  }
+  .bookLeft {
+    border: none;
+  }
+  .bookName {
+    font-weight: bold;
+    font-size: 13px;
+    width: 61%;
+  }
+  .quantity {
+    margin-top: 15px;
+  }
+  .edit button {
+    position: absolute;
+    right: 40px;
+    background-color: var(--book-button-bg-color);
+    color: #fff;
+    height: 30px;
+    width: 55px;
+    border: none;
+    border-radius: 10px;
+  }
+  .quantity,
+  .bookPrice {
+    font-size: 13px;
+  }
+  .right {
+    padding: 0;
+  }
+  .right .box {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 30px;
+    border: 1px solid #ececec;
+    border-radius: 20px 20px 0 0;
+  }
+  .bookLeft img {
+    width: 80%;
+  }
+  .bookRight {
+    margin: 0;
+  }
+  .launchIcon {
+    position: absolute;
+    right: 20px;
+  }
+  .checkout button {
+    border-radius: 10px;
+    height: 35px;
+    font-size: 16px;
+  }
+  .shipping,
+  .total,
+  .checkout {
+    margin-top: 15px;
+  }
+  .scrollSelection {
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #bcbcbc;
+  }
+  .scrollSelection .num {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #d1d1d1;
+    margin: 5px 0;
+  }
+  .scrollSelection .num span {
+    margin-top: 5px;
+  }
+  .select {
+    color: #000;
+  }
+  .mask {
+    width: 50%;
+    height: 20px;
+    border-top: 1px solid #bcbcbc;
+    border-bottom: 1px solid #bcbcbc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+  }
+}

@@ -1,0 +1,328 @@
+:root {
+  --book-button-bg-color: #812020;
+}
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.crumbs {
+  width: 80vw;
+  font-weight: bold;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 15px;
+}
+.detailed {
+  display: flex;
+  width: 80vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 15px;
+}
+.left {
+  width: 50%;
+  border-right: 1px solid #ececec;
+}
+.bookList {
+  height: 285px;
+  overflow: auto;
+}
+.deliverAddress .title,
+.deliverAddress .existing,
+.deliverAddress .addAddress {
+  display: flex;
+  align-items: center;
+}
+.deliverAddress .title img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.deliverAddress .title span,
+.deliverAddress .existing span {
+  font-weight: bold;
+}
+.deliverAddress .existing {
+  margin-left: 25px;
+  margin-top: 15px;
+}
+.deliverAddress .existing img {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.deliverAddress .existing span {
+  font-size: 13px;
+}
+.deliverAddress .address {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 45px;
+  margin-top: 15px;
+  padding-right: 20px;
+}
+.deliverAddress .address img,
+.deliverAddress .addAddress img {
+  width: 20px;
+  height: 20px;
+}
+.deliverAddress .address span {
+  font-size: 13px;
+}
+.deliverAddress .addAddress {
+  margin-left: 25px;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.right {
+  width: 50%;
+}
+.right .box {
+  padding: 20px;
+  width: 70%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #ececec;
+}
+.left .shipping {
+  margin-top: 15px;
+}
+.left .shipping .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.left .shipping .title > img {
+  margin-right: 20px !important;
+}
+.left .shipping .title > div > a {
+  display: flex;
+  align-items: center;
+}
+.left .shipping .title img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.priority {
+  display: flex;
+
+  padding: 10px 20px 0 25px;
+}
+.priority > div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.priority > div > div > div {
+  font-size: 12px;
+}
+.priority img {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  margin-right: 5px;
+  top: 5px;
+}
+.payment {
+  margin-top: 15px;
+}
+.payment .title > a {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.payment .title img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.payment .visa {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 0 25px;
+}
+.payment .visa > div {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+.payment .visa > div img {
+  margin-right: 5px;
+}
+.payment .visa img {
+  width: 15px;
+  height: 15px;
+}
+.payment .billingAddress {
+  margin-left: 45px;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 13px;
+}
+.payment .msg {
+  display: flex;
+  align-items: center;
+  margin-left: 45px;
+  margin-top: 10px;
+  font-size: 13px;
+}
+.payment .msg img {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+.box .book {
+  display: flex;
+}
+.box .book .Screenshot {
+  width: 100px;
+}
+.box .book .num {
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  background-color: var(--book-button-bg-color);
+  border-radius: 50%;
+  position: absolute;
+  right: -7px;
+  top: -7px;
+}
+.box .book .bookImg {
+  position: relative;
+  border: 1px solid #e0e0e0;
+}
+.box .book .rightMsg {
+  margin-left: 15px;
+  font-size: 13px;
+  font-weight: bold;
+}
+.box .book .rightMsg .bookPrice {
+  margin-top: 10px;
+}
+.mt {
+  margin-top: 10px;
+}
+.totalMsg .subtotal,
+.totalMsg .shipping,
+.totalMsg .total {
+  display: flex;
+  justify-content: space-between;
+}
+.right .buttons {
+  width: 100%;
+  text-align: center;
+}
+.right .buttons button {
+  background-color: var(--book-button-bg-color);
+  color: #fff;
+  height: 35px;
+  width: 120px;
+  border: none;
+}
+.phoneCrumbs,
+.toPrev,
+.gamesTitle,
+.phonePriority,
+.toRight {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .crumbs,
+  .next,
+  .existing,
+  .addAddress,
+  .address img,
+  .left .shipping .title > img,
+  .priority,
+  .payment .visa > img,
+  .billingAddress,
+  .msg,
+  .book {
+    display: none !important;
+  }
+  .phoneCrumbs,
+  .toPrev,
+  .gamesTitle,
+  .phonePriority,
+  .toRight {
+    display: block;
+  }
+  .detailed {
+    flex-direction: column;
+    width: 100%;
+    position: inherit;
+  }
+  .deliverAddress,
+  .left .shipping {
+    border-bottom: 1px solid #dcdcdc;
+    padding: 0 45px;
+    padding-bottom: 20px;
+  }
+  .payment {
+    padding: 0 45px;
+  }
+  .title {
+    position: relative;
+  }
+  .toRight {
+    position: absolute;
+    right: 0;
+  }
+  .right .box {
+    width: 88%;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+    bottom: -60px;
+    border-bottom: none;
+  }
+  /* .total {
+    font-weight: bold;
+  } */
+  .right .buttons button {
+    border-radius: 10px;
+    height: 40px;
+  }
+  .left,
+  .right {
+    width: 100%;
+    border: none;
+  }
+  .phonePriority {
+    margin-left: 25px;
+    font-size: 13px;
+  }
+  .deliverAddress .address {
+    margin-left: 25px;
+  }
+  .gamesTitle {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    padding-bottom: 0;
+  }
+
+  .gamesTitle span {
+    display: inline-block;
+    position: relative;
+    left: 40%;
+    transform: translateX(-50%);
+  }
+
+  .phoneCrumbs {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  .bookList {
+    height: auto;
+  }
+}

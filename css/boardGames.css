@@ -1,0 +1,270 @@
+:root {
+  --book-button-bg-color: #812020;
+}
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.crumbs {
+  width: 80vw;
+  font-weight: bold;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 15px;
+}
+.detailed {
+  width: 80vw;
+  height: 77vh;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 15px;
+}
+.center {
+  display: flex;
+}
+.leftImg {
+  border: 1px solid #ececec;
+}
+.center img {
+  width: 356px;
+  /* height: 305px; */
+}
+.rightMsg {
+  margin-left: 40px;
+}
+.rightMsg .bookName {
+  font-size: 22px;
+  font-weight: bold;
+}
+.rightMsg .price {
+  font-weight: bold;
+}
+.rightMsg .price,
+.leftOne {
+  margin-top: 25px;
+}
+.leftOne span {
+  color: var(--book-button-bg-color);
+}
+.addFavorite {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  margin-top: 25px;
+}
+
+.addFavorite img {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: -5px;
+}
+.reduce,
+.add,
+.add2cart {
+  background-color: var(--book-button-bg-color);
+  border: none;
+  color: #fff;
+  height: 24px;
+  position: relative;
+}
+.reduce {
+  left: 4px;
+}
+.add {
+  right: 4px;
+}
+.counter {
+  display: flex;
+  margin-top: 25px;
+}
+.counter .num {
+  border: 1px solid #ececec;
+  border-left: none;
+  border-right: none;
+  width: 30px;
+  height: 20px;
+  text-align: center;
+}
+.add2cart {
+  width: 100px;
+  font-size: 12px;
+  margin-left: 15px;
+}
+.addDescription {
+  margin-top: 25px;
+  width: 200px;
+  font-size: 13px;
+}
+.addDescription img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.description,
+.refund {
+  display: flex;
+  align-items: center;
+}
+.description {
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 5px;
+}
+.refund {
+  padding-top: 5px;
+}
+.imgThumbnail {
+  width: 356px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+.imgThumbnail img {
+  width: 27%;
+}
+.imgList {
+  display: flex;
+  width: 300px;
+  justify-content: space-evenly;
+}
+.imgList .oneImg {
+  border: 1px solid #ececec;
+  width: 27%;
+  height: 91px;
+  text-align: center;
+}
+.toLeft,
+.toRight {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  background-color: var(--book-button-bg-color);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 12px;
+}
+.toPrev,
+.upperRightCorner,
+.phoneAddDescription,
+.phonePrice,
+.phoneCart {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .header,
+  .crumbs,
+  .imgThumbnail,
+  .addFavorite,
+  .addDescription,
+  .price,
+  .add2cart {
+    display: none;
+  }
+  .upperRightCorner,
+  .toPrev,
+  .phoneAddDescription,
+  .phonePrice,
+  .phoneCart {
+    display: block;
+  }
+  .toPrev {
+    margin: 5px 0 0 20px;
+  }
+  .upperRightCorner {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    z-index: 9999;
+  }
+  .upperRightCorner img {
+    margin: 10px 0;
+  }
+  .center {
+    flex-direction: column;
+    align-items: center;
+  }
+  .leftImg {
+    border: none;
+  }
+  .center img {
+    width: 290px;
+  }
+  .rightMsg {
+    margin: 0;
+    width: 89%;
+  }
+  .detailed {
+    width: 100vw;
+    margin: 0;
+  }
+  .rightMsg {
+    width: 99%;
+    box-sizing: border-box;
+    border: 1px solid #c8c8c8;
+    border-bottom: none;
+    border-radius: 20px;
+    position: relative;
+  }
+  .rightMsg .bookName {
+    width: 200px;
+    font-size: 18px;
+  }
+  .leftOne {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    margin: 0;
+    color: #7d7d7d;
+    font-size: 12px;
+  }
+  .leftOne span {
+    color: #7d7d7d;
+  }
+  .phoneAddDescription {
+    margin-top: 15px;
+  }
+  .phoneAddDescription img {
+    width: 20px;
+  }
+  .description {
+    border: none;
+  }
+  .counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 90px;
+    border: 1px solid #c8c8c8;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .counter img {
+    width: 20px;
+  }
+  .reduce,
+  .num,
+  .add {
+    background-color: #fff;
+    color: #000;
+  }
+  .counter .num {
+    border: none;
+  }
+  .rightMsg .bookName,
+  .phoneAddDescription {
+    margin: 20px;
+  }
+  .leftImg {
+    height: 360px;
+    margin-bottom: 15px;
+  }
+  .leftImg img {
+    height: 100%;
+  }
+}

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./css/checkout.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/toolbar.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <div class="header">
+        <a href="./home.html">
+          <img src="./images/logo.png" alt="logo" class="logo" />
+        </a>
+        <a href="./home.html">
+          <span class="home">Home</span>
+        </a>
+        <span class="shop">Shop</span>
+        <div class="popover">
+          <dl>
+            <a href="./searchResult.html">
+              <dt>Board Games</dt>
+              <dd>Abstract strategy</dd>
+              <dd>Advanced strategy</dd>
+              <dd>Card games</dd>
+              <dd>Comic/Tv theme</dd>
+              <dd>Family strategy</dd>
+              <dd>Fantasy/Si-Fi</dd>
+            </a>
+          </dl>
+          <dl>
+            <a href="./searchResult.html">
+              <dt>Traditional Games</dt>
+              <dd>Backgammon</dd>
+              <dd>Chess Sets</dd>
+              <dd>Cribbage</dd>
+              <dd>Others</dd>
+            </a>
+          </dl>
+          <dl>
+            <a href="./searchResult.html">
+              <dt>RPGs</dt>
+              <dd>Dungeons and Dragons</dd>
+              <dd>Fantasy</dd>
+              <dd>Others</dd>
+            </a>
+          </dl>
+        </div>
+        <div class="search">
+          <a href="./searchResult.html">
+            <img
+              src="./images/search.png"
+              alt="searchIcon"
+              class="searchIcon"
+            />
+          </a>
+          <input
+            type="text"
+            placeholder="Search"
+            class="searchInp"
+            id="searchInp"
+          />
+        </div>
+        <div class="icon">
+          <a href="./cart.html">
+            <img src="./images/cart.png" alt="cart" />
+          </a>
+        </div>
+      </div>
+      <!-- body -->
+      <div class="gamesTitle">
+        <a href="./cart.html">
+          <img
+            src="./images/baseline-keyboard_arrow_left-24px.svg"
+            alt="icon"
+          />
+        </a>
+        <span>CHECKOUT</span>
+      </div>
+      <!-- <div class="toPrev"><</div>
+      <div class="crumbs">Home>Board Games>Cart>Checkout</div> -->
+      <!-- <div class="phoneCrumbs">CHECKOUT</div> -->
+      <div class="detailed">
+        <div class="left">
+          <div class="deliverAddress">
+            <div class="title">
+              <img
+                src="./images/baseline-check_circle_outline-24px.svg"
+                id="titleIcon"
+                alt=""
+              />
+              <a href="./checkout1.html">
+                <span>Deliver address</span>
+              </a>
+              <a href="./checkout1.html">
+                <img
+                  src="./images/baseline-keyboard_arrow_right-24px.svg"
+                  alt="icon"
+                  class="toRight"
+                />
+              </a>
+            </div>
+            <div class="existing" id="existing">
+              <img src="./images/group1897.svg" alt="icon" id="existingIcon" />
+              <span>Existing address</span>
+            </div>
+            <div class="address">
+              <span>33 Arlington Street Cocoa, FL 32927</span>
+              <img src="./images/outline-edit-24px.svg" alt="icon" />
+            </div>
+            <div class="addAddress">
+              <img src="./images/baseline-add-24px.svg" alt="icon" />
+              <span>Add new address</span>
+            </div>
+          </div>
+          <div class="shipping">
+            <div class="title">
+              <div>
+                <a href="./checkout2.html">
+                  <img
+                    src="./images/baseline-check_circle_outline-24px.svg"
+                    id="shippingTitleIcon"
+                    alt=""
+                  />
+                  <span>Shipping</span>
+                </a>
+
+                <a href="./checkout2.html">
+                  <img
+                    src="./images/baseline-keyboard_arrow_right-24px.svg"
+                    alt="icon"
+                    class="toRight"
+                  />
+                </a>
+              </div>
+              <img
+                src="./images/baseline-keyboard_arrow_down-24px.svg"
+                alt=""
+              />
+            </div>
+            <div class="priority" id="priorityOne">
+              <img
+                src="./images/group1898.svg"
+                alt="icon"
+                id="priorityOneIcon"
+              />
+              <div>
+                <div>
+                  <span>FedEx priority</span>
+                  <div>Estimated shipping: 3 days</div>
+                </div>
+
+                <span>$30</span>
+              </div>
+            </div>
+            <div class="priority" id="priorityTwo">
+              <img
+                src="./images/group1897.svg"
+                alt="icon"
+                id="priorityTwoIcon"
+              />
+              <div>
+                <div>
+                  <span>FedEx economy</span>
+                  <div>Estimated shipping: 6 days</div>
+                </div>
+
+                <span>$20</span>
+              </div>
+            </div>
+            <div class="priority" id="priorityThree">
+              <img
+                src="./images/group1898.svg"
+                alt="icon"
+                id="priorityThreeIcon"
+              />
+              <div>
+                <div>
+                  <span>DHL</span>
+                  <div>Estimated shipping: 7 days</div>
+                </div>
+
+                <span>$18</span>
+              </div>
+            </div>
+            <div class="phonePriority mt">FedEx Economy</div>
+          </div>
+          <div class="payment">
+            <div class="title">
+              <a href="./checkout3.html">
+                <img
+                  id="paymentTitleIcon"
+                  src="./images/baseline-check_circle_outline-24px.svg"
+                  alt="icon"
+                />
+                <span>Payment</span>
+              </a>
+              <a href="./checkout3.html">
+                <img
+                  src="./images/baseline-keyboard_arrow_right-24px.svg"
+                  alt="icon"
+                  class="toRight"
+                />
+              </a>
+            </div>
+            <div class="visa">
+              <div>
+                <img src="./images/baseline-payment-24px.svg" alt="icon" />
+                <span>Visa - 8888</span>
+              </div>
+              <img src="./images/outline-edit-24px.svg" alt="icon" />
+            </div>
+            <div class="billingAddress">Billing address</div>
+            <div class="msg" id="billingAddress">
+              <img
+                src="./images/group1897.svg"
+                alt="icon"
+                id="billingAddressIcon"
+              />
+              <span>Same as delivery address</span>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="box">
+            <div class="bookList" id="bookList">
+              <!-- <div class="book">
+                <div class="bookImg">
+                  <img
+                    src="./images/Screenshot 2022-04-09 at 9.44.26 PM.png"
+                    alt="Screenshot"
+                    class="Screenshot"
+                  />
+                  <div class="num" id="num">1</div>
+                </div>
+                <div class="rightMsg">
+                  <div class="bookName">
+                    D&D 5E: Expansion Rulebooks Gift Set
+                  </div>
+                  <div class="bookPrice">$169.95</div>
+                </div>
+              </div> -->
+              <!-- <div class="book mt">
+                <div class="bookImg">
+                  <img
+                    src="./images/Screenshot 2022-04-09 at 11.09.02 AM.png"
+                    alt="Screenshot"
+                    class="Screenshot"
+                  />
+                  <img src="./images/组 1899.svg" alt="icon" class="num" />
+                </div>
+                <div class="rightMsg">
+                  <div class="bookName">Wingspan</div>
+                  <div class="bookPrice">$59.95</div>
+                </div>
+              </div>  -->
+            </div>
+            <!-- Total price -->
+            <div class="totalMsg mt">
+              <div class="subtotal">
+                <span>Subtotal</span>
+                <span id="subtotal">$221119.94</span>
+              </div>
+              <div class="shipping mt">
+                <span>Shipping</span>
+                <span id="ShippingPriceDom">$20</span>
+              </div>
+              <div class="total mt">
+                <span>Total</span>
+                <span id="total">$249.94</span>
+              </div>
+            </div>
+            <div class="buttons mt">
+              <a href="./complete.html">
+                <button id="placeOrder">Place order</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile end bottom toolbar -->
+      <div class="phoneToolbar">
+        <div class="next">
+          <img
+            src="./images/outline-arrow_drop_down_circle-24px.png"
+            alt="down"
+            id="next"
+          />
+        </div>
+        <div class="toolbar">
+          <a href="./home.html">
+            <img src="./images/baseline-home-24px.png" alt="home" />
+          </a>
+          <a href="./searchResult.html">
+            <img src="./images/baseline-search-24px.png" alt="" />
+          </a>
+          <a href="./cart.html">
+            <img src="./images/baseline-shopping_cart-24px.png" alt="cart" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/checkout.js"></script>
+</html>

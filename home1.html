@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/toolbar.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <div class="header">
+        <a href="./home.html">
+          <img src="./images/logo.png" alt="logo" class="logo" />
+        </a>
+        <a href="./home.html">
+          <span class="home">Home</span>
+        </a>
+        <span class="shop">Shop</span>
+        <div class="popover">
+          <dl>
+            <a href="./searchResult.html">
+              <dt>Board Games</dt>
+              <dd>Abstract strategy</dd>
+              <dd>Advanced strategy</dd>
+              <dd>Card games</dd>
+              <dd>Comic/Tv theme</dd>
+              <dd>Family strategy</dd>
+              <dd>Fantasy/Si-Fi</dd>
+            </a>
+          </dl>
+          <dl>
+            <a href="./searchResult.html">
+              <dt>Traditional Games</dt>
+              <dd>Backgammon</dd>
+              <dd>Chess Sets</dd>
+              <dd>Cribbage</dd>
+              <dd>Others</dd>
+            </a>
+          </dl>
+          <dl>
+            <a href="./searchResult.html">
+              <dt>RPGs</dt>
+              <dd>Dungeons and Dragons</dd>
+              <dd>Fantasy</dd>
+              <dd>Others</dd>
+            </a>
+          </dl>
+        </div>
+        <div class="search">
+          <a href="./searchResult.html">
+            <img
+              src="./images/search.png"
+              alt="searchIcon"
+              class="searchIcon"
+            />
+          </a>
+          <input
+            type="text"
+            placeholder="Search"
+            class="searchInp"
+            id="searchInp"
+          />
+        </div>
+        <div class="icon">
+          <a href="./cart.html">
+            <img src="./images/cart.png" alt="cart" />
+          </a>
+        </div>
+      </div>
+      <!-- banner -->
+      <div class="banner slide-box" id="banner">
+        <span class="prev leftArrow" id="prev"><</span>
+        <div class="hot" id="hot">
+          <ul id="ul">
+            <li id="one">
+              <div class="mask"></div>
+              <div class="bannerImg"></div>
+              <div class="msg">
+                <div class="title">
+                  <div>New</div>
+                  <div>Arrival</div>
+                </div>
+                <div class="information">
+                  <div>Ghostly</div>
+                  <div>Hallows</div>
+                </div>
+                <button class="informationButton" id="informationButtonOne">
+                  More information
+                </button>
+              </div>
+            </li>
+            <li id="two">
+              <div class="mask"></div>
+              <div class="bannerImg bgimg"></div>
+              <div class="msg">
+                <div class="title">
+                  <div>New</div>
+                  <div>Arrival</div>
+                </div>
+                <div class="information">
+                  <div>Ghostly</div>
+                  <div>Hallows</div>
+                </div>
+                <button class="informationButton" id="informationButtonTwo">
+                  More information
+                </button>
+              </div>
+            </li>
+          </ul>
+          <span class="next rightArrow" id="right">></span>
+        </div>
+        <div class="indicator">
+          <span class="color1B"></span>
+          <span class="color6E"></span>
+          <span class="color98"></span>
+        </div>
+      </div>
+
+      <div class="rightIcon">
+        <a href="https://www.facebook.com/">
+          <img src="./images/Facebook.svg" alt="" />
+        </a>
+        <a href="https://www.instagram.com/">
+          <img src="./images/Instagram_black.svg" alt="" />
+        </a>
+        <a href="https://www.reddit.com/">
+          <img src="./images/Reddit_black.svg" alt="" />
+        </a>
+      </div>
+      <!-- Mobile end bottom toolbar -->
+      <div class="phoneToolbar">
+        <div class="next">
+          <!-- <a href="#two"> -->
+          <img
+            src="./images/outline-arrow_drop_down_circle-24px.png"
+            alt="down"
+            id="next"
+          />
+          <!-- </a> -->
+        </div>
+        <div class="toolbar">
+          <a href="./home.html">
+            <img src="./images/baseline-home-24px.png" alt="home" />
+          </a>
+          <a href="./searchResult.html">
+            <img src="./images/baseline-search-24px.png" alt="" />
+          </a>
+          <img
+            src="./images/baseline-favorite_border-24px.png"
+            alt="heart"
+            class="heart"
+          />
+          <a href="./cart.html">
+            <img src="./images/baseline-shopping_cart-24px.png" alt="cart" />
+          </a>
+          <img src="./images/baseline-perm_identity-24px.png" alt="personal" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/slideshow .js"></script>
+  <script src="./js/home.js"></script>
+</html>

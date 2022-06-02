@@ -1,0 +1,131 @@
+body,
+html {
+  margin: 0;
+  height: 100%;
+}
+body {
+  font-family: Verdana;
+}
+input {
+  outline: none;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+button {
+  cursor: pointer;
+}
+.container {
+  margin: auto;
+  width: 100%;
+  position: relative;
+}
+.header {
+  width: 100%;
+  height: 102px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.search {
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+}
+.searchIcon {
+  margin-left: 5px;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.searchInp {
+  border: none;
+  height: 26px;
+  padding: 0;
+}
+.logo {
+  width: 346px;
+  height: 80px;
+  margin-left: 20px;
+}
+
+.home,
+.shop,
+.search {
+  margin-left: 50px;
+}
+.icon {
+  position: absolute;
+  right: 50px;
+}
+.icon img {
+  margin: 0 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.popover {
+  position: absolute;
+  top: 100px;
+  left: 355px;
+  background-color: #fff;
+  width: 500px;
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+  display: none;
+  z-index: 88;
+}
+.popover dt {
+  font-size: 16px;
+  margin: 10px 0;
+  font-weight: bold;
+  text-align: center;
+}
+.popover dd {
+  font-size: 14px;
+  margin: 10px 0;
+  text-align: center;
+}
+.shop {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.shop:hover + .popover {
+  display: flex !important;
+}
+.popover:hover {
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .home,
+  .shop,
+  .search,
+  .icon,
+  .leftArrow,
+  .rightArrow,
+  .indicator {
+    display: none;
+  }
+  .header {
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 10vh;
+  }
+  .logo {
+    width: 132px;
+    height: 31px;
+    margin: 0 30px 5px 0;
+  }
+}

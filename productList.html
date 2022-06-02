@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>productList</title>
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/productList.css" />
+    <link rel="stylesheet" href="./css/toolbar.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <div class="header">
+        <a href="./home.html">
+          <img src="./images/logo.png" alt="logo" class="logo" />
+        </a>
+        <a href="./home.html">
+          <span class="home">Home</span>
+        </a>
+        <span class="shop">Shop</span>
+        <div class="popover">
+          <dl>
+            <a href="./searchResult.html">
+              <dt>Board Games</dt>
+              <dd>Abstract strategy</dd>
+              <dd>Advanced strategy</dd>
+              <dd>Card games</dd>
+              <dd>Comic/Tv theme</dd>
+              <dd>Family strategy</dd>
+              <dd>Fantasy/Si-Fi</dd>
+            </a>
+          </dl>
+          <dl>
+            <a href="./searchResult.html">
+              <dt>Traditional Games</dt>
+              <dd>Backgammon</dd>
+              <dd>Chess Sets</dd>
+              <dd>Cribbage</dd>
+              <dd>Others</dd>
+            </a>
+          </dl>
+          <dl>
+            <a href="./searchResult.html">
+              <dt>RPGs</dt>
+              <dd>Dungeons and Dragons</dd>
+              <dd>Fantasy</dd>
+              <dd>Others</dd>
+            </a>
+          </dl>
+        </div>
+        <div class="search">
+          <a href="./searchResult.html">
+            <img
+              src="./images/search.png"
+              alt="searchIcon"
+              class="searchIcon"
+            />
+          </a>
+          <input
+            type="text"
+            placeholder="Search"
+            class="searchInp"
+            id="searchInp"
+          />
+        </div>
+        <div class="icon">
+          <a href="./cart.html">
+            <img src="./images/cart.png" alt="cart" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Board Games -->
+      <div class="boardGames">
+        <div class="gamesTitle">
+          <a href="./searchResult.html">
+            <img
+              src="./images/baseline-keyboard_arrow_left-24px.svg"
+              alt="icon"
+            />
+          </a>
+          <span>Board Games</span>
+        </div>
+        <div class="refine">
+          <button>
+            <img src="./images/baseline-filter_list-24px.svg" alt="icon" />
+            Refine
+          </button>
+        </div>
+        <div class="bookList" id="bookList">
+          <div class="book" id="bookOne">
+            <a href="./boardGames.html">
+              <img
+                src="./images/Screenshot 2022-04-09 at 11.03.53 AM.png"
+                alt="book" />
+              <div class="bookName">UK'o Toa</div>
+              <div class="price">$29.99</div>
+              <div class="stock">In stock</div>
+              <img
+                src="./images/baseline-favorite_border-24px.svg"
+                alt="icon"
+                class="favorite"
+            /></a>
+          </div>
+          <div class="book" id="bookTwo">
+            <a href="./boardGames.html">
+              <img
+                src="./images/Screenshot 2022-04-09 at 11.09.02 AM.png"
+                alt="book" />
+              <div class="bookName">wingspan</div>
+              <div class="price">$59.99</div>
+              <div class="stock">In stock</div>
+              <img
+                src="./images/baseline-favorite_border-24px.svg"
+                alt="icon"
+                class="favorite"
+            /></a>
+          </div>
+          <div class="book" id="bookThree">
+            <a href="./boardGames.html">
+              <img
+                src="./images/Screenshot 2022-04-09 at 7.41.00 PM.png"
+                alt="book" />
+              <div class="bookName">Sherlock Holmes</div>
+              <div class="price">$49.99</div>
+              <div class="stock">In stock</div>
+              <img
+                src="./images/baseline-favorite_border-24px.svg"
+                alt="icon"
+                class="favorite"
+            /></a>
+          </div>
+          <div class="book" id="bookFour">
+            <a href="./boardGames.html">
+              <img
+                src="./images/Screenshot 2022-04-09 at 7.44.57 PM.png"
+                alt="book" />
+              <div class="bookName">Mariposas</div>
+              <div class="price">$49.99</div>
+              <div class="stock">In stock</div>
+              <img
+                src="./images/baseline-favorite_border-24px.svg"
+                alt="icon"
+                class="favorite"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile end bottom toolbar -->
+      <div class="phoneToolbar">
+        <div class="next">
+          <img
+            src="./images/outline-arrow_drop_down_circle-24px.png"
+            alt="down"
+            id="next"
+          />
+        </div>
+        <div class="toolbar">
+          <a href="./home.html">
+            <img src="./images/baseline-home-24px.png" alt="home" />
+          </a>
+          <a href="./searchResult.html">
+            <img src="./images/baseline-search-24px.png" alt="" />
+          </a>
+          <a href="./cart.html">
+            <img src="./images/baseline-shopping_cart-24px.png" alt="cart" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="./js/productList.js"></script>
+  </body>
+</html>

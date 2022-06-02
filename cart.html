@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart</title>
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/toolbar.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <div class="header">
+        <a href="./home.html">
+          <img src="./images/logo.png" alt="logo" class="logo" />
+        </a>
+        <a href="./home.html">
+          <span class="home">Home</span>
+        </a>
+        <span class="shop">Shop</span>
+        <div class="popover">
+          <dl>
+            <a href="./searchResult.html">
+              <dt>Board Games</dt>
+              <dd>Abstract strategy</dd>
+              <dd>Advanced strategy</dd>
+              <dd>Card games</dd>
+              <dd>Comic/Tv theme</dd>
+              <dd>Family strategy</dd>
+              <dd>Fantasy/Si-Fi</dd>
+            </a>
+          </dl>
+          <dl>
+            <a href="./searchResult.html">
+              <dt>Traditional Games</dt>
+              <dd>Backgammon</dd>
+              <dd>Chess Sets</dd>
+              <dd>Cribbage</dd>
+              <dd>Others</dd>
+            </a>
+          </dl>
+          <dl>
+            <a href="./searchResult.html">
+              <dt>RPGs</dt>
+              <dd>Dungeons and Dragons</dd>
+              <dd>Fantasy</dd>
+              <dd>Others</dd>
+            </a>
+          </dl>
+        </div>
+        <div class="search">
+          <a href="./searchResult.html">
+            <img
+              src="./images/search.png"
+              alt="searchIcon"
+              class="searchIcon"
+            />
+          </a>
+          <input
+            type="text"
+            placeholder="Search"
+            class="searchInp"
+            id="searchInp"
+          />
+        </div>
+        <div class="icon">
+          <a href="./cart.html">
+            <img src="./images/cart.png" alt="cart" />
+          </a>
+        </div>
+      </div>
+
+      <!-- body -->
+      <div class="crumbs">Home>Board Games>Cart</div>
+      <div class="phoneCrumbs">CART</div>
+      <div class="detailed">
+        <div class="left" id="left">
+          <div class="bookList" id="bookList">
+            
+            <div class="update"><button>Update cart</button></div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="box" id="box">
+            <div class="subtotal">
+              <span>Subtotal</span>
+              <span id="subtotal">$229.94</span>
+            </div>
+            <div class="shipping">
+              <span>Shipping</span>
+              <span>$20</span>
+            </div>
+            <div class="total">
+              <span>Total</span>
+              <span id="total">$249.94</span>
+            </div>
+            <div class="checkout">
+              <a href="./checkout.html">
+                <button id="checkout">Checkout</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- scroll Selection -->
+        <div class="scrollSelection" id="scrollSelection">
+          <div class="num">
+            <span>01</span>
+            <span>02</span>
+            <span class="select">03</span>
+            <span>04</span>
+            <span>05</span>
+            <span>06</span><span>07</span><span>08</span><span>09</span
+            ><span>10</span>
+          </div>
+          <div class="mask"></div>
+        </div>
+      </div>
+
+      <!-- Mobile end bottom toolbar -->
+      <div class="phoneToolbar">
+        <div class="next">
+          <img
+            src="./images/outline-arrow_drop_down_circle-24px.png"
+            alt="down"
+            id="next"
+          />
+        </div>
+        <div class="toolbar">
+          <a href="./home.html">
+            <img src="./images/baseline-home-24px.png" alt="home" />
+          </a>
+          <a href="./searchResult.html">
+            <img src="./images/baseline-search-24px.png" alt="" />
+          </a>
+          <a href="./cart.html">
+            <img src="./images/baseline-shopping_cart-24px.png" alt="cart" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/cart.js"></script>
+</html>
